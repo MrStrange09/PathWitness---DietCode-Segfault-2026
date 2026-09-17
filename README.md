@@ -76,8 +76,6 @@ tests/           fixtures, including the mechanically reduced real function
 results/         BEFORE.md, AFTER.md, COMPARISON.md and the raw JSON behind them
 ```
 
-## What is ours, and what is not
-
 Everything in `src/`, `bench/`, `tests/` and the runner is written for this
 project, under Apache-2.0 with the LLVM exception (see LICENSE), the same terms
 as LLVM itself so the passes can be offered upstream unchanged.
@@ -90,8 +88,7 @@ libraries are downloaded at their own upstream URLs, pinned by SHA-256 in
 [bench/corpora.py](bench/corpora.py), and none of their source is copied into
 this repository.
 
-The rewrite identity our first pass applies is not new and we do not claim it;
-FINDINGS.md says what is and is not our contribution, and cites the closest
+The rewrite identity our first pass applies is not new and we do not claim it; report cites the closest
 upstream work.
 
 ## Checking the detector
