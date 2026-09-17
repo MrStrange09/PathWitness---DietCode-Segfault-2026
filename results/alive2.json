@@ -1,0 +1,174 @@
+{
+  "generated": "2026-09-09T17:51:25.375642+00:00",
+  "mode": "online",
+  "endpoint": "https://alive2.llvm.org/ce/api/compiler/alive/compile",
+  "local_llvm": "clang version 22.1.6 (https://github.com/llvm/llvm-project fc4aad7b5db3fff421df9a9637605b9ca5667881)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin",
+  "local_llvm_rtti": "NO",
+  "plugin_source_sha256": "38d51720e3f87c50af10fc84412651c8c5b06bda93a8a7e1d57b2675badb68ac",
+  "disabled_undef_or_poison": false,
+  "cases": [
+    {
+      "name": "identity-i1-i8-eq",
+      "kind": "local identity with symbolic mask",
+      "expected": "correct",
+      "input_sha256": "465cd7a1a02ddbcf1c9d5094bfb9f51ce140861cb85d5b5becdf221b65d96f83",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "identity-i8-i32-ne",
+      "kind": "local identity with symbolic mask",
+      "expected": "correct",
+      "input_sha256": "401d6aaa70b1616fe64498ea0b238d39731ec7fa963e3e9d8988c7a7fb3b64e3",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "identity-i16-i32-eq",
+      "kind": "local identity with symbolic mask",
+      "expected": "correct",
+      "input_sha256": "d83d4574a62279e9f85bb2eae81510cda29d3f46404f01267b3dcadfaec3f0f8",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "identity-i32-i64-eq",
+      "kind": "local identity with symbolic mask",
+      "expected": "correct",
+      "input_sha256": "29ba796f7444abc838e0a777b28fcab81a885f6595d0d3bcfe16a9f844fdfed8",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "identity-i63-i64-ne",
+      "kind": "local identity with symbolic mask",
+      "expected": "correct",
+      "input_sha256": "4ba9cafc090cc84a796ade55c37551b238fb60fc2de4450e80db1652172bf288",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-defined",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "2763f27d6b25d8fcbe386279bd5d2d0a9dd0a163383f52b7fdc3e5c9612262e1",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-unrestricted",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "612a463ba319b4773e52a558875749d2418ca9710491260d4b1b3ac80d49642c",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-false-edge",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "8676023c5c305b20e4a85b84555abcdcc7f18e7c1f511bc33691a1bdae3b9b7c",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-query-ne",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "50d90b657336953e18f7a9bef53ac80f12364ace230c6eadabd41670c99c6e2a",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-high-mask",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "d316273b0b9622370489eeea0eb69c5b703275dbe3e2a96e2d2916504759f7df",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-shared-freeze",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "880da708ed5436fa60a65454f349ceaed028d20236e1bcf3ac13f2c2dcaf199b",
+      "verdict": "inconclusive",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-select-undef",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "402d68a9642409c3805dcd5fd59294fc932ebf7b2af7648200ace43fbcb91924",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-poison-producer",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "4e736d189e7ef7648a155dd184a0238c2db3bf99c4c7357e746360caae109654",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-load",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "8d1b1c1cbb2917a3677e2a4a0d171307ac474ee4f0a9dc6e557d175dcc8f6dfa",
+      "verdict": "correct",
+      "reused_saved_response": true
+    },
+    {
+      "name": "actual-freeze-return-control",
+      "kind": "actual pass output",
+      "expected": "correct",
+      "input_sha256": "855c1a33c4f0d6eb88bd576349dd961396f1151b1023929ced6055f349562e8d",
+      "verdict": "correct"
+    },
+    {
+      "name": "deliberately-wrong-mask",
+      "kind": "validator negative control",
+      "expected": "incorrect",
+      "input_sha256": "99583063026e7a60e03f23af1aeb7b9848bf6e04234ba3d6b5b8849760b5a5a8",
+      "verdict": "incorrect",
+      "reused_saved_response": true
+    }
+  ],
+  "server_version_output": "LLVM (http://llvm.org/):\n  LLVM version 22.0.0git\n  Optimized build with assertions.\n<No output file>",
+  "commands": [
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/llvm-config --cmakedir",
+    "cmake -S /home/arpit/Desktop/segfault/segFault-mark1/plugin -B /home/arpit/Desktop/segfault/segFault-mark1/build/mask-width -G Ninja -DLLVM_DIR=/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/lib/cmake/llvm -DCMAKE_CXX_COMPILER=/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/clang++",
+    "cmake --build /home/arpit/Desktop/segfault/segFault-mark1/build/mask-width --target PathWitnessMaskWidth",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-defined-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-defined-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-unrestricted-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-unrestricted-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-false-edge-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-false-edge-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-query-ne-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-query-ne-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-high-mask-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-high-mask-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-shared-freeze-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-shared-freeze-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-select-undef-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-select-undef-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-poison-producer-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-poison-producer-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-load-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-load-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -load-pass-plugin=/home/arpit/Desktop/segfault/segFault-mark1/build/mask-width/PathWitnessMaskWidth.so '-passes=function(path-witness-mask-width)' -verify-each -S /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-freeze-return-control-before.ll -o /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-freeze-return-control-after.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/clang --version",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/llvm-config --has-rtti",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/identity-i1-i8-eq-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/identity-i8-i32-ne-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/identity-i16-i32-eq-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/identity-i32-i64-eq-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/identity-i63-i64-ne-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-defined-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-unrestricted-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-false-edge-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-query-ne-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-high-mask-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-shared-freeze-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-select-undef-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-poison-producer-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-load-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/actual-freeze-return-control-pair.ll",
+    "/home/arpit/llvm-dl/LLVM-22.1.6-Linux-X64/bin/opt -passes=verify -disable-output /home/arpit/Desktop/segfault/segFault-mark1/artifacts/issue06/validation/deliberately-wrong-mask-pair.ll"
+  ],
+  "all_expected_results": false,
+  "scope": "Online Alive2 checks of five local identities and ten synthetic before/actual-pass-output pairs, plus a wrong-rewrite control. Preserve inconclusive results separately from accepted/rejected checks. Not validation of every possible pass match or whole SQLite/O3. Server version can differ from local LLVM."
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "Preserve an optimization discrepancy through LLVM extraction/reduction. This is not semantic equivalence to the whole SQLite function or a claim of global minimality.",
+  "coverage_report_sha256": "691c26ab46fac98fab43296946a4557fbfc142edbe3e102d16bf1116044e4f13",
+  "sqlite_source_sha256": "1a206854aa9fe0ccc1b609f5cfce67eb52ac0a8f5aa2f5e853f7c3ed84c710ab",
+  "full_ir_metrics": {
+    "bytes": 15876221,
+    "module_lines": 367926,
+    "function_lines": 91,
+    "instruction_lines": 63,
+    "sha256": "c74751f96252b64a8d837e4e85d3944161087721aa8c0d3872b8505e9f2bfce8"
+  },
+  "extracted_metrics": {
+    "bytes": 5693,
+    "module_lines": 134,
+    "function_lines": 91,
+    "instruction_lines": 63,
+    "sha256": "d63f5165c8d06ac7d5c66232067b50dbe08c4dbbe2c244211d10bc1fb9639007"
+  },
+  "reduced_metrics": {
+    "bytes": 1039,
+    "module_lines": 32,
+    "function_lines": 29,
+    "instruction_lines": 17,
+    "sha256": "f49a3e2803941a9608615f7fd5ceeab104c1ee41d9e7b37908706ecbd4b2b9c5"
+  },
+  "llvm": "LLVM (http://llvm.org/):\n  LLVM version 22.1.6\n  Optimized build.",
+  "plugin_source_sha256": "38d51720e3f87c50af10fc84412651c8c5b06bda93a8a7e1d57b2675badb68ac",
+  "oracle_sha256": "7f20ddddf7c2c4494d9c7355c76c7c690cd547160dbb14452437141b0276cb44",
+  "trials": 721,
+  "unique_accepted_candidates": 42,
+  "reduction_report": "artifacts/issue09/reduction/20260909T212755225737Z/results.json",
+  "fixture_sha256": "f49a3e2803941a9608615f7fd5ceeab104c1ee41d9e7b37908706ecbd4b2b9c5",
+  "fixture_is_unedited_reducer_output": true
+}

@@ -1,0 +1,524 @@
+{
+  "functions": 3034,
+  "branch_edges": 44556,
+  "timeouts": 1,
+  "skipped_functions": 18,
+  "findings": [
+    {
+      "function": "sqlite3_value_dup",
+      "block": "%15",
+      "edge": "%61",
+      "condition": "%18",
+      "condition_ir": "icmp eq i16 %pw.mask3, 0",
+      "facts_available": 4,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%9 -> %15"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3VdbeMemCopy",
+      "block": "%18",
+      "edge": "%65",
+      "condition": "%20",
+      "condition_ir": "icmp eq i16 %pw.mask1, 0",
+      "facts_available": 2,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%8 -> %13"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3BtreeInsert",
+      "block": "%339",
+      "edge": "%345",
+      "condition": "%344",
+      "condition_ir": "icmp ult i64 %343, 128",
+      "facts_available": 3,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%329 -> %339"
+      ],
+      "needs": [
+        "ordering",
+        "width-cast"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%447",
+      "edge": "%448",
+      "condition": "%315",
+      "condition_ir": "icmp eq i8 %314, 0",
+      "facts_available": 7,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%448",
+      "edge": "%459",
+      "condition": "%450",
+      "condition_ir": "icmp eq i8 %449, 0",
+      "facts_available": 8,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%448",
+      "edge": "%451",
+      "condition": "%450",
+      "condition_ir": "icmp eq i8 %449, 0",
+      "facts_available": 8,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%451",
+      "edge": "%458",
+      "condition": "%457",
+      "condition_ir": "icmp eq i8 %456, 0",
+      "facts_available": 9,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%451",
+      "edge": "%459",
+      "condition": "%457",
+      "condition_ir": "icmp eq i8 %456, 0",
+      "facts_available": 9,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%459",
+      "edge": "%462",
+      "condition": "%461",
+      "condition_ir": "icmp eq i32 %460, 0",
+      "facts_available": 8,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%459",
+      "edge": "%464",
+      "condition": "%461",
+      "condition_ir": "icmp eq i32 %460, 0",
+      "facts_available": 8,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%464",
+      "edge": "%473",
+      "condition": "%466",
+      "condition_ir": "icmp eq i8 %465, 0",
+      "facts_available": 8,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%464",
+      "edge": "%467",
+      "condition": "%466",
+      "condition_ir": "icmp eq i8 %465, 0",
+      "facts_available": 8,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%467",
+      "edge": "%472",
+      "condition": "%471",
+      "condition_ir": "icmp eq i32 %470, 0",
+      "facts_available": 9,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3Prepare",
+      "block": "%467",
+      "edge": "%473",
+      "condition": "%471",
+      "condition_ir": "icmp eq i32 %470, 0",
+      "facts_available": 9,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%447 -> %448",
+        "%312 -> %356"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3AddColumn",
+      "block": "%126",
+      "edge": "%762",
+      "condition": "%127",
+      "condition_ir": "icmp eq i32 %55, 0",
+      "facts_available": 4,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%50 -> %54"
+      ],
+      "needs": [
+        "equality",
+        "ordering"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "sqlite3JoinType",
+      "block": "%284",
+      "edge": "%285",
+      "condition": "%100",
+      "condition_ir": "icmp eq i32 %17, 4",
+      "facts_available": 3,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%155 -> %158"
+      ],
+      "needs": [
+        "equality"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "compoundHasDifferentAffinities",
+      "block": "%147",
+      "edge": "%202",
+      "condition": "%149",
+      "condition_ir": "icmp eq i32 %148, 6909556",
+      "facts_available": 2,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%109 -> %120"
+      ],
+      "needs": [
+        "bitmask",
+        "equality",
+        "width-cast"
+      ],
+      "module": "sqlite-sqlite3-O3-after.ll"
+    },
+    {
+      "function": "decimalNewFromText",
+      "block": "%162",
+      "edge": "%185",
+      "condition": "%165",
+      "condition_ir": "icmp eq i32 %163, 0",
+      "facts_available": 3,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%158 -> %162"
+      ],
+      "needs": [
+        "equality",
+        "ordering"
+      ],
+      "module": "sqlite-shell-O3-after.ll"
+    },
+    {
+      "function": "seriesFilter",
+      "block": "%100",
+      "edge": "%103",
+      "condition": "%101",
+      "condition_ir": "icmp eq i64 %75, %74",
+      "facts_available": 2,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%93 -> %100",
+        "%61 -> %93"
+      ],
+      "needs": [
+        "equality",
+        "ordering"
+      ],
+      "module": "sqlite-shell-O3-after.ll"
+    },
+    {
+      "function": "csv_read_one_field",
+      "block": "%79",
+      "edge": "%83",
+      "condition": "%62",
+      "condition_ir": "icmp eq i32 %34, -1",
+      "facts_available": 8,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%61 -> %76",
+        "%76 -> %79"
+      ],
+      "needs": [
+        "bitmask",
+        "disequality",
+        "equality"
+      ],
+      "module": "sqlite-shell-O3-after.ll"
+    },
+    {
+      "function": "str_find_aux",
+      "block": "%49",
+      "edge": "%134",
+      "condition": "%52",
+      "condition_ir": "icmp eq i64 %51, 0",
+      "facts_available": 4,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%47 -> %49",
+        "%42 -> %47"
+      ],
+      "needs": [
+        "equality",
+        "ordering"
+      ],
+      "module": "lua-lstrlib-O3-after.ll"
+    },
+    {
+      "function": "luaH_resize",
+      "block": "%72",
+      "edge": "%74",
+      "condition": "%73",
+      "condition_ir": "icmp eq i64 %46, 0",
+      "facts_available": 4,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%39 -> %48"
+      ],
+      "needs": [
+        "bitmask",
+        "equality",
+        "ordering",
+        "width-cast"
+      ],
+      "module": "lua-ltable-O3-after.ll"
+    },
+    {
+      "function": "mz_zip_reader_locate_file_v2",
+      "block": "%176",
+      "edge": "%205",
+      "condition": "%177",
+      "condition_ir": "icmp eq i16 %162, 0",
+      "facts_available": 4,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%159 -> %160",
+        "%160 -> %165"
+      ],
+      "needs": [
+        "equality",
+        "width-cast"
+      ],
+      "module": "zip-zip-O3-after.ll"
+    },
+    {
+      "function": "mz_zip_reader_extract_iter_new",
+      "block": "%124",
+      "edge": "%125",
+      "condition": "%56",
+      "condition_ir": "icmp eq i32 %55, 0",
+      "facts_available": 10,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%54 -> %65"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "zip-zip-O3-after.ll"
+    },
+    {
+      "function": "mz_zip_reader_extract_iter_new",
+      "block": "%125",
+      "edge": "%143",
+      "condition": "%128",
+      "condition_ir": "icmp eq i16 %127, 0",
+      "facts_available": 11,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%54 -> %65",
+        "%124 -> %125"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "zip-zip-O3-after.ll"
+    },
+    {
+      "function": "mz_zip_reader_extract_iter_new",
+      "block": "%125",
+      "edge": "%129",
+      "condition": "%128",
+      "condition_ir": "icmp eq i16 %127, 0",
+      "facts_available": 11,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%54 -> %65",
+        "%124 -> %125"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "zip-zip-O3-after.ll"
+    },
+    {
+      "function": "mz_zip_reader_extract_iter_new",
+      "block": "%145",
+      "edge": "%151",
+      "condition": "%56",
+      "condition_ir": "icmp eq i32 %55, 0",
+      "facts_available": 9,
+      "facts_necessary": 1,
+      "necessary_edges": [
+        "%54 -> %65"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "zip-zip-O3-after.ll"
+    },
+    {
+      "function": "mz_zip_reader_extract_iter_new",
+      "block": "%151",
+      "edge": "%173",
+      "condition": "%154",
+      "condition_ir": "icmp eq i16 %153, 0",
+      "facts_available": 10,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%145 -> %151",
+        "%54 -> %65"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "zip-zip-O3-after.ll"
+    },
+    {
+      "function": "mz_zip_reader_extract_iter_new",
+      "block": "%151",
+      "edge": "%155",
+      "condition": "%154",
+      "condition_ir": "icmp eq i16 %153, 0",
+      "facts_available": 10,
+      "facts_necessary": 2,
+      "necessary_edges": [
+        "%145 -> %151",
+        "%54 -> %65"
+      ],
+      "needs": [
+        "bitmask",
+        "equality"
+      ],
+      "module": "zip-zip-O3-after.ll"
+    }
+  ],
+  "needs": {
+    "bitmask, equality": 8,
+    "ordering, width-cast": 1,
+    "equality": 12,
+    "equality, ordering": 4,
+    "bitmask, equality, width-cast": 2,
+    "bitmask, disequality, equality": 1,
+    "bitmask, equality, ordering, width-cast": 1,
+    "equality, width-cast": 1
+  },
+  "refuted": 1,
+  "confirmed": 9,
+  "sampled": 20
+}
